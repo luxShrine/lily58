@@ -93,11 +93,11 @@
 
         Left_Focus {
             bindings = <
-&trans  &trans      &trans     &trans     &trans             &trans                       &trans  &trans     &trans     &trans    &trans  &trans
-&trans  &kp K_BACK  &trans     &trans     &kp K_FORWARD      &trans                       &trans  &trans     &trans     &trans    &trans  &trans
-&trans  &kp LC(A)   &kp LEFT   &kp DOWN   &kp UP             &kp RIGHT                    &trans  &kp RCTRL  &kp RSHFT  &kp RALT  &trans  &trans
-&trans  &kp LC(Z)   &kp LC(X)  &kp LC(C)  &kp LC(BACKSPACE)  &kp LC(V)  &trans    &trans  &trans  &trans     &trans     &trans    &trans  &trans
-                               &trans     &trans             &trans     &trans    &trans  &trans  &trans     &trans
+&trans  &trans     &trans     &trans     &trans             &trans                       &trans  &trans     &trans     &trans    &trans  &trans
+&trans  &trans     &trans     &trans     &trans             &trans                       &trans  &trans     &trans     &trans    &trans  &trans
+&trans  &kp LC(A)  &kp LEFT   &kp DOWN   &kp UP             &kp RIGHT                    &trans  &kp RCTRL  &kp RSHFT  &kp RALT  &trans  &trans
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(BACKSPACE)  &kp LC(V)  &trans    &trans  &trans  &trans     &trans     &trans    &trans  &trans
+                              &trans     &trans             &trans     &trans    &trans  &trans  &trans     &trans
             >;
         };
     };
