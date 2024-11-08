@@ -148,13 +148,13 @@
         Left_Focus {
             bindings = <
 &trans  &trans     &trans     &trans     &trans     &trans                       &trans  &trans     &trans     &trans    &trans         &trans
-&trans  &trans     &kp LC(W)  &kp LC(D)  &trans     &trans                       &trans  &trans     &trans     &trans    &trans         &trans
+&trans  &trans     &kp LC(W)  &trans     &trans     &trans                       &trans  &trans     &trans     &trans    &trans         &trans
 &trans  &kp LC(A)  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT                    &trans  &kp RCTRL  &kp RSHFT  &kp RALT  &kp RIGHT_GUI  &trans
 &trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(D)  &kp LC(V)  &trans    &trans  &trans  &trans     &trans     &trans    &trans         &trans
                               &trans     &trans     &trans     &trans    &trans  &trans  &trans     &trans
             >;
 
-            label = "Left_Focus";
+            label = "left";
         };
 
         win_man {
