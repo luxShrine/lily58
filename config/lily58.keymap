@@ -43,6 +43,11 @@
             bindings = <&caps_word>;
             key-positions = <37 38>;
         };
+
+        backslash_combo {
+            bindings = <&kp BSLH>;
+            key-positions = <20 21>;
+        };
     };
 
     behaviors {
@@ -116,7 +121,7 @@
             display-name = "Lower";
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0     &bt BT_SEL 1   &bt BT_SEL 2      &bt BT_SEL 3      &bt BT_SEL 4                    &trans       &trans             &trans                            &trans                 &trans        &trans
-&trans      &kp PERCENT      &kp TILDE      &kp PLUS          &kp AMPERSAND     &kp AT                          &trans       &kp PIPE           &kp LBKT                          &kp RIGHT_BRACKET      &kp GRAVE     &trans
+&trans      &kp PERCENT      &kp TILDE      &kp PLUS          &kp AMPERSAND     &kp AT                          &kp PIPE     &kp BACKSLASH      &kp LBKT                          &kp RIGHT_BRACKET      &kp GRAVE     &trans
 &kp POUND   &kp CARET        &kp EQUAL      &kp MINUS         &mt LCTRL DOLLAR  &kp ASTERISK                    &kp PERCENT  &mt RCTRL COLON    &mt RIGHT_SHIFT LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SQT       &trans
 &trans      &kp EXCLAMATION  &kp LESS_THAN  &kp GREATER_THAN  &kp UNDER         &updir        &trans    &trans  &trans       &kp DOUBLE_QUOTES  &kp LEFT_BRACE                    &kp RIGHT_BRACE        &kp QUESTION  &trans
                                             &trans            &trans            &trans        &trans    &trans  &kp DELETE   &trans             &trans
