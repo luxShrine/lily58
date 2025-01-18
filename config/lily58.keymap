@@ -9,6 +9,13 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/keys.h>
 
+&mt {
+    tapping-term-ms = <170>;
+    quick-tap-ms = <0>;
+    flavor = "tap-preferred";
+    require-prior-idle-ms = <100>;
+};
+
 / {
     macros {
         new_macro: new_macro {
@@ -100,11 +107,11 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC           &kp N1               &kp N2               &kp N3                 &kp N4                   &kp N5                                &kp N6           &kp N7            &kp N8                  &kp N9                &kp N0                &kp GRAVE
-&kp TAB           &kp Q                &kp W                &kp F                  &kp P                    &kp B                                 &kp J            &kp L             &kp U                   &kp Y                 &semi_bslash          &kp BACKSLASH
-&mt LCTRL ESCAPE  &LHS_HMR LEFT_GUI A  &LHS_HMR LEFT_ALT R  &LHS_HMR LEFT_SHIFT S  &LHS_HMR LEFT_CONTROL T  &kp G                                 &kp M            &RHS_HMR RCTRL N  &RHS_HMR RIGHT_SHIFT E  &RHS_HMR RIGHT_ALT I  &RHS_HMR RIGHT_WIN O  &key_repeat
-&caps_word        &kp Z                &kp X                &kp C                  &kp D                    &kp V      &kt LCTRL      &new_macro  &kp K            &kp H             &kp COMMA               &kp DOT               &kp FSLH              &kp CLCK
-                                                            &kp LEFT_GUI           &mo 4                    &lt 3 TAB  &lt 1 SPACE    &lt 2 RET   &lt 4 BACKSPACE  &kp RC(BSPC)      &kp RGUI
+&kp ESC           &kp N1          &kp N2          &kp N3            &kp N4              &kp N5                                &kp N6           &kp N7        &kp N8             &kp N9           &kp N0           &kp GRAVE
+&kp TAB           &kp Q           &kp W           &kp F             &kp P               &kp B                                 &kp J            &kp L         &kp U              &kp Y            &semi_bslash     &kp BACKSLASH
+&mt LCTRL ESCAPE  &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_SHIFT S  &mt LEFT_CONTROL T  &kp G                                 &kp M            &mt RCTRL N   &mt RIGHT_SHIFT E  &mt RIGHT_ALT I  &mt RIGHT_WIN O  &key_repeat
+&caps_word        &kp Z           &kp X           &kp C             &kp D               &kp V      &kt LCTRL      &new_macro  &kp K            &kp H         &kp COMMA          &kp DOT          &kp FSLH         &kp CLCK
+                                                  &kp LEFT_GUI      &mo 4               &lt 3 TAB  &lt 1 SPACE    &lt 2 RET   &lt 4 BACKSPACE  &kp RC(BSPC)  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
