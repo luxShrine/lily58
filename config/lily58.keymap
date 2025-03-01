@@ -108,30 +108,10 @@
             display-name = "Base";
             bindings = <
 &kp ESC           &kp N1          &kp N2          &kp N3            &kp N4              &kp N5                                &kp N6           &kp N7        &kp N8             &kp N9           &kp N0           &kp GRAVE
-&kp TAB           &kp Q           &kp W           &kp F             &kp P               &kp B                                 &kp J            &kp L         &kp U              &kp Y            &semi_bslash     &kp BACKSLASH
+&kp TAB           &kp Q           &kp W           &kp F             &kp P               &kp B                                 &kp J            &kp L         &kp U              &kp Y            &kp SEMICOLON    &kp BACKSLASH
 &mt LCTRL ESCAPE  &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_SHIFT S  &mt LEFT_CONTROL T  &kp G                                 &kp M            &mt RCTRL N   &mt RIGHT_SHIFT E  &mt RIGHT_ALT I  &mt RIGHT_WIN O  &key_repeat
 &caps_word        &kp Z           &kp X           &kp C             &kp D               &kp V      &kt LCTRL      &new_macro  &kp K            &kp H         &kp COMMA          &kp DOT          &kp FSLH         &kp CLCK
-                                                  &kp LEFT_GUI      &mo 4               &lt 3 TAB  &lt 1 SPACE    &lt 2 RET   &lt 4 BACKSPACE  &kp RC(BSPC)  &kp RGUI
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-        };
-
-        lower_layer {
-            // ------------------------------------------------------------------------------------------------------------
-            // | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |       |       |      |       |       |
-            // |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
-            // |   `   |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  &    |  *    |  (   |   )   |   ~   |
-            // |       |     |     |      |      |      |        |  |       |      |  _    |  +    |  {   |   }   |  "|"  |
-            //                     |      |      |      |        |  |       |      |       |       |
-
-            display-name = "Lower";
-            bindings = <
-&bt BT_CLR  &bt BT_SEL 0     &bt BT_SEL 1   &bt BT_SEL 2      &bt BT_SEL 3      &bt BT_SEL 4                    &trans       &trans             &trans                            &trans                 &trans        &trans
-&trans      &kp PERCENT      &kp TILDE      &kp PLUS          &kp AMPERSAND     &kp AT                          &kp PIPE     &kp BACKSLASH      &kp LBKT                          &kp RIGHT_BRACKET      &kp GRAVE     &trans
-&kp POUND   &kp CARET        &kp EQUAL      &kp MINUS         &mt LCTRL DOLLAR  &kp ASTERISK                    &kp PERCENT  &mt RCTRL COLON    &mt RIGHT_SHIFT LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SQT       &trans
-&trans      &kp EXCLAMATION  &kp LESS_THAN  &kp GREATER_THAN  &kp UNDER         &updir        &trans    &trans  &trans       &kp DOUBLE_QUOTES  &kp LEFT_BRACE                    &kp RIGHT_BRACE        &kp QUESTION  &trans
-                                            &trans            &trans            &trans        &trans    &trans  &kp DELETE   &trans             &trans
+                                                  &kp LEFT_GUI      &mo 4               &lt 2 TAB  &lt 2 SPACE    &lt 1 RET   &lt 3 BACKSPACE  &kp RC(BSPC)  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -157,16 +137,24 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        Left_Focus {
+        lower_layer {
+            // ------------------------------------------------------------------------------------------------------------
+            // | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |       |       |      |       |       |
+            // |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
+            // |   `   |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  &    |  *    |  (   |   )   |   ~   |
+            // |       |     |     |      |      |      |        |  |       |      |  _    |  +    |  {   |   }   |  "|"  |
+            //                     |      |      |      |        |  |       |      |       |       |
+
+            display-name = "Lower";
             bindings = <
-&trans  &trans     &trans     &trans     &trans     &trans                       &trans  &trans     &trans     &trans    &trans         &trans
-&trans  &trans     &kp LC(W)  &trans     &trans     &trans                       &trans  &trans     &trans     &trans    &trans         &trans
-&trans  &kp LC(A)  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT                    &trans  &kp RCTRL  &kp RSHFT  &kp RALT  &kp RIGHT_GUI  &trans
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(D)  &kp LC(V)  &trans    &trans  &trans  &trans     &trans     &trans    &trans         &trans
-                              &trans     &trans     &trans     &trans    &trans  &trans  &trans     &trans
+&bt BT_CLR  &bt BT_SEL 0     &bt BT_SEL 1   &bt BT_SEL 2      &bt BT_SEL 3      &bt BT_SEL 4                    &trans         &trans             &trans                            &trans                 &trans        &trans
+&trans      &kp PERCENT      &kp TILDE      &kp PLUS          &kp AMPERSAND     &kp AT                          &kp BACKSLASH  &kp PIPE           &kp LBKT                          &kp RIGHT_BRACKET      &kp GRAVE     &trans
+&kp POUND   &kp CARET        &kp EQUAL      &kp MINUS         &mt LCTRL DOLLAR  &kp ASTERISK                    &kp PERCENT    &mt RCTRL COLON    &mt RIGHT_SHIFT LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SQT       &trans
+&trans      &kp EXCLAMATION  &kp LESS_THAN  &kp GREATER_THAN  &kp UNDER         &updir        &trans    &trans  &trans         &kp DOUBLE_QUOTES  &kp LEFT_BRACE                    &kp RIGHT_BRACE        &kp QUESTION  &trans
+                                            &trans            &trans            &trans        &trans    &trans  &kp DELETE     &trans             &trans
             >;
 
-            label = "left";
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         win_man {
@@ -177,6 +165,18 @@
 &trans  &kp LA(LS(SPACE))  &kp LA(Z)      &kp LA(G)      &kp LA(N5)     &trans  &trans    &trans  &trans  &kp RA(N1)        &kp RA(N2)        &kp RA(N3)      &kp RA(N4)         &trans
                                           &trans         &trans         &trans  &trans    &trans  &trans  &trans            &trans
             >;
+        };
+
+        Left_Focus {
+            bindings = <
+&trans  &trans     &trans     &trans     &trans     &trans                       &trans  &trans     &trans     &trans    &trans         &trans
+&trans  &trans     &kp LC(W)  &trans     &trans     &trans                       &trans  &trans     &trans     &trans    &trans         &trans
+&trans  &kp LC(A)  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT                    &trans  &kp RCTRL  &kp RSHFT  &kp RALT  &kp RIGHT_GUI  &trans
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(D)  &kp LC(V)  &trans    &trans  &trans  &trans     &trans     &trans    &trans         &trans
+                              &trans     &trans     &trans     &trans    &trans  &trans  &trans     &trans
+            >;
+
+            label = "left";
         };
     };
 };
