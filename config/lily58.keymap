@@ -159,11 +159,11 @@
 
         win_man {
             bindings = <
-&trans  &trans             &trans         &trans         &trans         &trans                    &trans  &trans            &trans            &trans          &trans             &trans
-&trans  &kp LA(LS(A))      &kp LA(LS(R))  &kp LA(LS(S))  &kp LA(LS(T))  &trans                    &trans  &kp RA(RS(LEFT))  &kp RA(RS(DOWN))  &kp RA(RS(UP))  &kp RA(RS(RIGHT))  &trans
-&trans  &kp LA(LC(D))      &kp LA(LS(U))  &kp LA(LC(E))  &kp LA(LC(E))  &trans                    &trans  &kp RA(LEFT)      &kp RA(DOWN)      &kp RA(UP)      &kp RA(RIGHT)      &trans
-&trans  &kp LA(LS(SPACE))  &kp LA(Z)      &kp LA(G)      &kp LA(N5)     &trans  &trans    &trans  &trans  &kp RA(N1)        &kp RA(N2)        &kp RA(N3)      &kp RA(N4)         &trans
-                                          &trans         &trans         &trans  &trans    &trans  &trans  &trans            &trans
+&trans         &trans         &trans         &trans             &trans         &trans                    &trans      &trans            &trans            &trans          &trans             &trans
+&trans         &kp LA(LS(A))  &kp LA(LS(S))  &kp LA(LS(S))      &kp LA(LS(R))  &trans                    &trans      &kp RA(RS(LEFT))  &kp RA(RS(DOWN))  &kp RA(RS(UP))  &kp RA(RS(RIGHT))  &trans
+&kp LA(LC(V))  &kp LA(LC(D))  &kp LA(LS(U))  &kp LA(LC(G))      &kp LA(LC(E))  &trans                    &trans      &kp RA(LEFT)      &kp RA(DOWN)      &kp RA(UP)      &kp RA(RIGHT)      &trans
+&trans         &kp LA(LS(Z))  &kp LA(SLASH)  &kp LA(LS(SPACE))  &kp LA(LS(G))  &trans  &trans    &trans  &kp LA(N5)  &kp RA(N1)        &kp RA(N2)        &kp RA(N3)      &kp RA(N4)         &trans
+                                             &trans             &trans         &trans  &trans    &trans  &trans      &trans            &trans
             >;
         };
 
