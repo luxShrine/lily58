@@ -111,7 +111,7 @@
 &kp TAB           &kp Q           &kp W           &kp F             &kp P               &kp B                                 &kp J            &kp L         &kp U              &kp Y            &kp SEMICOLON    &kp BACKSLASH
 &mt LCTRL ESCAPE  &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_SHIFT S  &mt LEFT_CONTROL T  &kp G                                 &kp M            &mt RCTRL N   &mt RIGHT_SHIFT E  &mt RIGHT_ALT I  &mt RIGHT_WIN O  &key_repeat
 &caps_word        &kp Z           &kp X           &kp C             &kp D               &kp V      &kt LCTRL      &new_macro  &kp K            &kp H         &kp COMMA          &kp DOT          &kp FSLH         &kp CLCK
-                                                  &kp LEFT_GUI      &mo 4               &lt 2 TAB  &lt 2 SPACE    &lt 1 RET   &lt 3 BACKSPACE  &kp RC(BSPC)  &kp RGUI
+                                                  &kp LEFT_GUI      &mo 4               &lt 3 TAB  &lt 2 SPACE    &lt 1 RET   &lt 3 BACKSPACE  &kp RC(BSPC)  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -160,7 +160,7 @@
         win_man {
             bindings = <
 &trans         &trans         &trans         &trans             &trans         &trans                    &trans      &trans            &trans            &trans          &trans             &trans
-&trans         &kp LA(LS(A))  &kp LA(LS(S))  &kp LA(LS(S))      &kp LA(LS(R))  &trans                    &trans      &kp RA(RS(LEFT))  &kp RA(RS(DOWN))  &kp RA(RS(UP))  &kp RA(RS(RIGHT))  &trans
+&trans         &kp LA(LS(A))  &kp LA(LS(S))  &kp LA(LS(T))      &kp LA(LS(R))  &trans                    &trans      &kp RA(RS(LEFT))  &kp RA(RS(DOWN))  &kp RA(RS(UP))  &kp RA(RS(RIGHT))  &trans
 &kp LA(LC(V))  &kp LA(LC(D))  &kp LA(LS(U))  &kp LA(LC(G))      &kp LA(LC(E))  &trans                    &trans      &kp RA(LEFT)      &kp RA(DOWN)      &kp RA(UP)      &kp RA(RIGHT)      &trans
 &trans         &kp LA(LS(Z))  &kp LA(SLASH)  &kp LA(LS(SPACE))  &kp LA(LS(G))  &trans  &trans    &trans  &kp LA(N5)  &kp RA(N1)        &kp RA(N2)        &kp RA(N3)      &kp RA(N4)         &trans
                                              &trans             &trans         &trans  &trans    &trans  &trans      &trans            &trans
