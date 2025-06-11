@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 
 &mt {
     tapping-term-ms = <170>;
@@ -30,6 +29,13 @@
             #binding-cells = <0>;
             bindings = <&kp PERIOD &kp PERIOD &kp SLASH &kp ENTER>;
             label = "UPDIR";
+        };
+
+        grab_file_name: grab_file_name {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F2 &kp LC(A) &kp LC(C)>;
+            label = "GRAB_FILE_NAME";
         };
     };
 
@@ -169,11 +175,11 @@
 
         Left_Focus {
             bindings = <
-&trans  &trans     &trans     &trans     &trans     &trans                       &trans  &trans     &trans     &trans    &trans         &trans
-&trans  &trans     &kp LC(W)  &trans     &trans     &trans                       &trans  &trans     &trans     &trans    &trans         &trans
-&trans  &kp LC(A)  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT                    &trans  &kp RCTRL  &kp RSHFT  &kp RALT  &kp RIGHT_GUI  &trans
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(D)  &kp LC(V)  &trans    &trans  &trans  &trans     &trans     &trans    &trans         &trans
-                              &trans     &trans     &trans     &trans    &trans  &trans  &trans     &trans
+&trans  &trans     &trans     &trans     &trans           &trans                       &trans  &trans     &trans     &trans    &trans         &trans
+&trans  &trans     &kp LC(W)  &kp F2     &grab_file_name  &trans                       &trans  &trans     &trans     &trans    &trans         &trans
+&trans  &kp LC(A)  &kp LEFT   &kp DOWN   &kp UP           &kp RIGHT                    &trans  &kp RCTRL  &kp RSHFT  &kp RALT  &kp RIGHT_GUI  &trans
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(D)        &kp LC(V)  &trans    &trans  &trans  &trans     &trans     &trans    &trans         &trans
+                              &trans     &trans           &trans     &trans    &trans  &trans  &trans     &trans
             >;
 
             label = "left";
