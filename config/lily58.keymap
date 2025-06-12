@@ -179,10 +179,20 @@
 &trans  &trans     &kp LC(W)  &kp F2     &grab_file_name  &trans                       &trans  &trans     &trans     &trans    &trans         &trans
 &trans  &kp LC(A)  &kp LEFT   &kp DOWN   &kp UP           &kp RIGHT                    &trans  &kp RCTRL  &kp RSHFT  &kp RALT  &kp RIGHT_GUI  &trans
 &trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(D)        &kp LC(V)  &trans    &trans  &trans  &trans     &trans     &trans    &trans         &trans
-                              &trans     &trans           &trans     &trans    &trans  &trans  &trans     &trans
+                              &tog 5     &trans           &trans     &trans    &trans  &trans  &trans     &trans
             >;
 
             label = "left";
+        };
+
+        qwerty {
+            bindings = <
+&kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4    &kp N5                             &kp N6     &kp N7    &kp N8     &kp N9   &kp N0    &kp BACKSPACE
+&kp TAB    &kp Q   &kp W   &kp E   &kp R     &kp T                              &kp Y      &kp U     &kp I      &kp O    &kp P     &kp LBKT
+&kp ESC    &kp A   &kp S   &kp D   &kp F     &kp G                              &kp H      &kp J     &kp K      &kp L    &kp SEMI  &kp APOS
+&kp LSHFT  &kp Z   &kp X   &kp C   &kp V     &kp B      &kp BSPC     &kp EQUAL  &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                           &tog 5  &kp LALT  &kp LCTRL  &kp SPACE    &kp ENTER  &kp LCTRL  &kp LALT  &kp LGUI
+            >;
         };
     };
 };
