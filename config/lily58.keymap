@@ -137,7 +137,7 @@
 &kp C_MUTE         &trans  &kp N7  &kp N8  &kp N9              &trans                    &kp LC(PRINTSCREEN)  &trans        &kp PAGE_DOWN  &kp PAGE_UP  &trans         &trans
 &kp C_VOLUME_DOWN  &trans  &kp N4  &kp N5  &mt LCTRL NUMBER_6  &trans                    &kp PRINTSCREEN      &kp LEFT      &kp DOWN       &kp UP       &kp RIGHT      &trans
 &kp C_VOL_UP       &trans  &kp N1  &kp N2  &kp N3              &kp N0  &trans    &trans  &trans               &kp RC(LEFT)  &kp RC(DOWN)   &kp RC(UP)   &kp RC(RIGHT)  &trans
-                                   &trans  &trans              &trans  &trans    &trans  &kp DELETE           &trans        &trans
+                                   &trans  &trans              &trans  &trans    &trans  &kp DELETE           &tog 1        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -157,7 +157,7 @@
 &trans      &kp PERCENT      &kp TILDE      &kp PLUS          &kp AMPERSAND     &kp AT                          &kp BACKSLASH  &kp PIPE           &kp LBKT                          &kp RIGHT_BRACKET      &kp GRAVE     &trans
 &kp POUND   &kp CARET        &kp EQUAL      &kp MINUS         &mt LCTRL DOLLAR  &kp ASTERISK                    &kp PERCENT    &mt RCTRL COLON    &mt RIGHT_SHIFT LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SQT       &trans
 &trans      &kp EXCLAMATION  &kp LESS_THAN  &kp GREATER_THAN  &kp UNDER         &updir        &trans    &trans  &trans         &kp DOUBLE_QUOTES  &kp LEFT_BRACE                    &kp RIGHT_BRACE        &kp QUESTION  &trans
-                                            &trans            &trans            &trans        &trans    &trans  &kp DELETE     &trans             &trans
+                                            &trans            &trans            &trans        &trans    &trans  &kp DELETE     &tog 2             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -169,7 +169,7 @@
 &trans         &kp LA(LS(A))  &kp LA(LS(S))  &kp LA(LS(T))      &kp LA(LS(R))  &trans                    &trans      &kp RA(RS(LEFT))  &kp RA(RS(DOWN))  &kp RA(RS(UP))  &kp RA(RS(RIGHT))  &trans
 &kp LA(LC(V))  &kp LA(LC(D))  &kp LA(LS(U))  &kp LA(LC(G))      &kp LA(LC(E))  &trans                    &trans      &kp RA(LEFT)      &kp RA(DOWN)      &kp RA(UP)      &kp RA(RIGHT)      &trans
 &trans         &kp LA(LS(Z))  &kp LA(SLASH)  &kp LA(LS(SPACE))  &kp LA(LS(G))  &trans  &trans    &trans  &kp RG(N5)  &kp RG(N1)        &kp RG(N2)        &kp RG(N3)      &kp RG(N4)         &trans
-                                             &trans             &trans         &trans  &trans    &trans  &trans      &trans            &trans
+                                             &trans             &trans         &trans  &trans    &trans  &trans      &tog 3            &trans
             >;
         };
 
@@ -179,7 +179,7 @@
 &trans  &trans     &kp LC(W)  &kp F2     &grab_file_name  &trans                       &trans  &trans     &trans     &trans    &trans         &trans
 &trans  &kp LC(A)  &kp LEFT   &kp DOWN   &kp UP           &kp RIGHT                    &trans  &kp RCTRL  &kp RSHFT  &kp RALT  &kp RIGHT_GUI  &trans
 &trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(D)        &kp LC(V)  &trans    &trans  &trans  &trans     &trans     &trans    &trans         &trans
-                              &tog 5     &trans           &trans     &trans    &trans  &trans  &trans     &trans
+                              &tog 5     &trans           &trans     &trans    &trans  &trans  &tog 4     &trans
             >;
 
             label = "left";
