@@ -168,7 +168,7 @@
 &trans         &trans         &trans         &trans             &trans         &trans                    &trans      &trans            &trans            &trans          &trans             &trans
 &trans         &kp LA(LS(A))  &kp LA(LS(S))  &kp LA(LS(T))      &kp LA(LS(R))  &trans                    &trans      &kp RA(RS(LEFT))  &kp RA(RS(DOWN))  &kp RA(RS(UP))  &kp RA(RS(RIGHT))  &trans
 &kp LA(LC(V))  &kp LA(LC(D))  &kp LA(LS(U))  &kp LA(LC(G))      &kp LA(LC(E))  &trans                    &trans      &kp RA(LEFT)      &kp RA(DOWN)      &kp RA(UP)      &kp RA(RIGHT)      &trans
-&trans         &kp LA(LS(Z))  &kp LA(SLASH)  &kp LA(LS(SPACE))  &kp LA(LS(G))  &trans  &trans    &trans  &kp RG(N5)  &kp RG(N1)        &kp RG(N2)        &kp RG(N3)      &kp RG(N4)         &trans
+&trans         &kp LA(LS(Z))  &kp LA(SLASH)  &kp LA(LS(SPACE))  &kp LA(LS(G))  &trans  &trans    &trans  &kp LG(N5)  &kp LG(N1)        &kp LG(N2)        &kp LG(N3)      &kp LG(N4)         &trans
                                              &trans             &trans         &trans  &trans    &trans  &trans      &tog 3            &trans
             >;
         };
